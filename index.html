@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto - Alura</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header" >
+            <img class="header_logo" src="./assets/Logo.png"alt="Logo de Alura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main_caja_de_texto">
+                <textarea  id= "ingresoTexto" class="ingreso_texto" placeholder="Ingrese texto aquí"></textarea>
+                <div class="ingreso_texto_pie" >
+                    <img src="./assets/bi_exclamation-circle-fill.png" alt="simbolo de admiración en círculo gris">
+                    <p class="ingreso_texto_simbolo">Solo letras minúsculas y sin acentos</p>
+                    <div class="ingreso_texto_boton">
+                        <button id="botonEncriptar" class="ingreso_texto_boton_encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="ingreso_texto_boton_desencriptar" >Desencriptar</button>
+                    </div>
+    
+                </div>
+                
+            </div>
+    
+            <div id="right" class="main_caja_de_mensaje ajustar" >
+                <img id="monito_alura"  class="monito_alura" src="./assets/Muñeco.png" alt="Muñeco de encriptador">
+               <div class="main_caja_de_texto_indicaciones" >
+                    <p id="mensajeFinal" class="main_caja_de_texto_indicaciones_uno ajustar">Ningún mensaje fue encontrado</p>
+                    <p id="indicaciones_dos" class="main_caja_de_texto_indicaciones_dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+               </div>
+                
+                <button id="botonCopiar" class="boton_caja_de_mensaje_copia oculto">Copiar</button>
+            </div>
+        </div>
+       
+       
+       
+    </main>
+    <footer>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
